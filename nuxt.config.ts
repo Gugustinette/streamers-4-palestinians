@@ -10,4 +10,9 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/streamers-4-palestinians"
   },
+  fonts: {
+    assets: {
+      prefix: "/streamers-4-palestinians/_fonts/",
+    }
+  },
 })

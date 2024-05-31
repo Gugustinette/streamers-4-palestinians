@@ -1,8 +1,8 @@
 <template>
     <nav>
-        <a href="/">
+        <NuxtLink to="/">
             <NuxtImg src="/streamers-4-palestinians-logo.png" alt="Logo" />
-        </a>
+        </NuxtLink>
         <ul>
             <li>
                 <NuxtLink to="/">Accueil</NuxtLink>

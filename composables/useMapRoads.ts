@@ -3,7 +3,7 @@ export const useMapRoads = async (leafletMap: any) => {
    * Fetch the GeoJSON file
    */
   const response = await fetch(
-    "/steamers-4-palestinians/data/hotosm_pse_roads_lines_geojson/hotosm_pse_roads_lines_geojson.geojson"
+    "/streamers-4-palestinians/data/hotosm_pse_roads_lines_geojson/hotosm_pse_roads_lines_geojson.geojson"
   );
   const geojsonRoads = await response.json();
 

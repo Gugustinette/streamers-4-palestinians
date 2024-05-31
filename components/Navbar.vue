@@ -11,6 +11,9 @@
                 <NuxtLink to="/streamers">Streamers</NuxtLink>
             </li>
             <li>
+                <NuxtLink to="/statistics">Statistiques</NuxtLink>
+            </li>
+            <li>
                 <NuxtLink to="/map">Carte</NuxtLink>
             </li>
         </ul>

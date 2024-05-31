@@ -7,4 +7,7 @@ export default defineNuxtConfig({
       ssr: false
     }
   },
+  app: {
+    baseURL: "/steamers-4-palestinians"
+  },
 })

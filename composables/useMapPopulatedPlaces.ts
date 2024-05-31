@@ -5,7 +5,7 @@ export const useMapPopulatedPlaces = async (leafletMap: any) => {
    * Fetch the GeoJSON file
    */
   const response = await fetch(
-    "/data/hotosm_pse_populated_places_points_geojson/hotosm_pse_populated_places_points_geojson.geojson"
+    "/steamers-4-palestinians/data/hotosm_pse_populated_places_points_geojson/hotosm_pse_populated_places_points_geojson.geojson"
   );
   const geojsonPopulatedPlaces = await response.json();
 

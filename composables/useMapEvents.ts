@@ -77,7 +77,7 @@ export const useMapEvents = async (leafletMap: any) => {
      * Load the CSV file containing the events data
      */
     const response = await fetch(
-        "/data/2023-10-01-2024-05-17-Middle_East-Israel-Palestine.csv"
+        "/steamers-4-palestinians/data/2023-10-01-2024-05-17-Middle_East-Israel-Palestine.csv"
     );
 
     /**

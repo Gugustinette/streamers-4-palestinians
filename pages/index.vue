@@ -29,7 +29,7 @@ header {
     place-items: center;
     height: 500px;
     width: 100%;
-    background-image: url('/fond-pasteque.png');
+    background-image: url('/steamers-4-palestinians/fond-pasteque.png');
     background-size: 10%;
 
     img {

@@ -40,6 +40,16 @@ header {
 .content {
     display: flex;
     flex-direction: column;
-    width: 800px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    header {
+        img {
+            height: auto;
+            width: 80%;
+        }
+    }
 }
 </style>

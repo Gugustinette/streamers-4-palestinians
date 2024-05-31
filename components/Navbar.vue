@@ -8,6 +8,9 @@
                 <NuxtLink to="/">Accueil</NuxtLink>
             </li>
             <li>
+                <NuxtLink to="/streamers">Streamers</NuxtLink>
+            </li>
+            <li>
                 <NuxtLink to="/map">Carte</NuxtLink>
             </li>
         </ul>

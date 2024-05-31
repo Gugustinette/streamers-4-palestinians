@@ -4,10 +4,10 @@
             <div
                 class="streamer-button"
                 v-for="streamer in streamerList"
-                :key="streamer"
-                @click="changeStreamer(streamer)"
+                :key="streamer.username"
+                @click="changeStreamer(streamer.username)"
             >
-                {{ streamer }}
+                {{ streamer.displayName }}
             </div>
         </div>
         <iframe
@@ -24,14 +24,40 @@
 
 <script setup lang="ts">
 const actualStreamer = ref('bagherajones')
+
+// Rewrite streamer list as objects with beautified names { username: 'streamer', displayName: 'Streamer' }
 const streamerList = [
-    'ultia',
-    'drfeelgood',
-    'gius',
-    'moman',
-    'covfefe',
-    'lapi',
-    'bagherajones',
+    { username: 'bagherajones', displayName: 'Baghera Jones' },
+    { username: 'ultia', displayName: 'Ultia' },
+    { username: 'drfeelgood', displayName: 'DrFeelgood' },
+    { username: 'gius', displayName: 'Gius' },
+    { username: 'lapi', displayName: 'Lapi' },
+    { username: 'moman', displayName: 'Moman' },
+    { username: 'covfefe', displayName: 'Covfefe' },
+    { username: 'lexitvz', displayName: 'Lexitvz' },
+    { username: 'clemovitch', displayName: 'Clemovitch' },
+    { username: 'hortyunderscore', displayName: 'Hortyunderscore' },
+    { username: 'mynthos', displayName: 'Mynthos' },
+    { username: 'zerator', displayName: 'Zerator' },
+    { username: 'antoinedaniel', displayName: 'Antoine Daniel' },
+    { username: 'alphacast', displayName: 'Alphacast' },
+    { username: 'bastiui', displayName: 'Bastiui' },
+    { username: 'clararunaway', displayName: 'Clara Runaway' },
+    { username: 'natoo', displayName: 'Natoo' },
+    { username: 'nat_ali', displayName: 'Nat & Ali' },
+    { username: 'avamind', displayName: 'Avamind' },
+    { username: 'pierrelapin', displayName: 'Pierre Lapin' },
+    { username: 'gom4rt', displayName: 'Gom4rt' },
+    { username: 'pelerine', displayName: 'Pelerine' },
+    { username: 'angledroit', displayName: 'Angle Droit' },
+    { username: 'doigby', displayName: 'Doigby' },
+    { username: 'ponce', displayName: 'Ponce' },
+    { username: 'littlebigwhale', displayName: 'LittleBigWhale' },
+    { username: 'onutrem', displayName: 'Onutrem' },
+    { username: 'shisheyu', displayName: 'Shisheyu' },
+    { username: 'lamhua', displayName: 'Lamhua' },
+    { username: 'shaunz', displayName: 'Shaunz' },
+    { username: 'dazjdm', displayName: 'DazJDM' },
 ]
 
 const changeStreamer = (streamer: string) => {
@@ -39,7 +65,7 @@ const changeStreamer = (streamer: string) => {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 main {
     display: flex;
     flex-direction: row;
@@ -52,6 +78,7 @@ main {
         height: 100%;
         row-gap: 10px;
         padding: 0 10px;
+        overflow-y: auto;
 
         .streamer-button {
             display: flex;
@@ -59,12 +86,20 @@ main {
             align-items: center;
             width: 100%;
             height: 50px;
+            min-height: 50px;
             cursor: pointer;
 
             &:hover {
                 color: var(--color-primary);
             }
         }
+
+        /* Hide Scrollbar */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     iframe {

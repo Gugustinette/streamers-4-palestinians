@@ -49,7 +49,7 @@ const streamerList = [
     { username: 'moman', displayName: 'Moman' },
     { username: 'mynthos', displayName: 'Mynthos' },
     { username: 'natoo', displayName: 'Natoo' },
-    { username: 'nat_ali', displayName: 'Nat & Ali' },
+    { username: 'nat_ali', displayName: 'Natali' },
     { username: 'onutrem', displayName: 'Onutrem' },
     { username: 'pelerine', displayName: 'Pelerine' },
     { username: 'pierrelapin', displayName: 'Pierre Lapin' },

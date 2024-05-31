@@ -8,6 +8,6 @@ export default defineNuxtConfig({
     }
   },
   app: {
-    baseURL: "/steamers-4-palestinians"
+    baseURL: "/streamers-4-palestinians"
   },
 })
